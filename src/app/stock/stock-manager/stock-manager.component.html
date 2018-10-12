@@ -31,7 +31,7 @@
         <td>{{stock.id}}</td>
         <td>{{stock.name}}</td>
         <td>{{stock.price}}</td>
-        <td><app-stars></app-stars></td>
+        <td><app-stars [rating]="stock.rating"></app-stars></td>
         <td>
           <a class="btn btn-warning btn-xs">
             <span class="glyphicon glyphicon-pencil"></span> Modify</a>
