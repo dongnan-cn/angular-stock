@@ -1,7 +1,7 @@
 <div class="box">
   <div class="box-header with-border">
     <div>
-      <a class="btn btn-success btn-sm">
+      <a class="btn btn-success btn-sm" (click)="create()">
         <span class="glyphicon glyphicon-plus"></span>Create</a>
     </div>
 
@@ -31,9 +31,11 @@
         <td>{{stock.id}}</td>
         <td>{{stock.name}}</td>
         <td>{{stock.price}}</td>
-        <td><app-stars [rating]="stock.rating"></app-stars></td>
         <td>
-          <a class="btn btn-warning btn-xs">
+          <app-stars [rating]="stock.rating"></app-stars>
+        </td>
+        <td>
+          <a class="btn btn-warning btn-xs" (click)="update(stock)">
             <span class="glyphicon glyphicon-pencil"></span> Modify</a>
           <span>&nbsp;</span>
           <a class="btn btn-danger btn-xs">

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Stock } from '../stock-manager/stock-manager.component';
 
 @Component({
   selector: 'app-stock-form',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stock-form.component.css']
 })
 export class StockFormComponent implements OnInit {
-
+  stock: Stock
   constructor() { }
 
   ngOnInit() {
+    this.stock = new Stock(2, "600002", 2.99, 2.5, " First stock", ["IT", "互联网"])
   }
 
 }

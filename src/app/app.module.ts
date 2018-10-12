@@ -16,7 +16,8 @@ import { StockFormComponent } from './stock/stock-form/stock-form.component';
 const routeConfig: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'stock', component: StockManagerComponent }
+  { path: 'stock', component: StockManagerComponent },
+  { path: 'stock/:id', component: StockFormComponent }
 
 ]
 
