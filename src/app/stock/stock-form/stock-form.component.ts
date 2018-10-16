@@ -10,6 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class StockFormComponent implements OnInit {
   stock: Stock
+  
   constructor(private routeInfo: ActivatedRoute,
     private stockService: StockService,
     private router: Router) { }
@@ -24,6 +25,7 @@ export class StockFormComponent implements OnInit {
   }
 
   save() {
+    console.log(this.stock.rating)
     this.router.navigateByUrl('/stock');
   }
 }
